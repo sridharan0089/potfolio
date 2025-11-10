@@ -1,0 +1,301 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body styles */
+body {
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* Container for main content */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(45deg, #00cc66, #0055a2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Navigation links styling */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  gap: 30px;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 170px;
+  border-radius: 20%;
+  border-color: #00cc66;
+  border-width: 1cm;
+  object-fit: fill;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.intro p {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  gap: 30px;
+}
+
+.left-column {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0055a2;
+}
+
+/* Card Styling */
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  font-size: 1.1em;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Button Styles */
+.button {
+  padding: 10px 20px;
+  background-color: #00cc66;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004d00;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Skills Section */
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.skills-category h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #0055a2;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Skill Card Styling */
+.skill-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.skill-card.highlighted {
+  background-color: #ffd700; /* Highlighted background */
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* Skill Icon Styling */
+.skill-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Highlighted Skills */
+.skill-card.highlight {
+  background-color: #f0f0f0; /* Light background color to highlight */
+  border: 2px solid #4caf50; /* Green border for the highlighted skill */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Project Hover Effects */
+.project:hover .skill-card[data-project="project1"] {
+  background-color: #00cc66;  /* Green for Project 1 */
+}
+
+.project:hover .skill-card[data-project="project2"] {
+  background-color: #0055a2;  /* Blue for Project 2 */
+}
+
+/* Turtle Project Hover Effect */
+.turtle-project:hover .skill-card {
+  background-color: #ff6600;  /* Orange for Turtle Project */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column {
+    margin-bottom: 30px;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .skill-card {
+    width: 120px; /* Adjust skill card size for smaller screens */
+    height: 120px;
+  }
+
+  .button {
+    font-size: 1em; /* Adjust button font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1.8em;
+  }
+
+  .intro p {
+    font-size: 1em;
+  }
+
+  .skill-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button {
+    font-size: 0.9em; /* Adjust button font size on smaller screens */
+  }
+}
+
